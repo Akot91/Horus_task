@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kot.inode.MyStructureTestSuite" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-17T10:00:45" hostname="DESKTOP-ML8I2ET" time="0.013">
+  <properties/>
+  <testcase name="shouldReturnINodeByRender" classname="com.kot.inode.MyStructureTestSuite" time="0.01"/>
+  <testcase name="shouldReturnExceptionWhenCodeIsNull" classname="com.kot.inode.MyStructureTestSuite" time="0.0"/>
+  <testcase name="shouldReturnExceptionWhenRenderIsNull" classname="com.kot.inode.MyStructureTestSuite" time="0.0"/>
+  <testcase name="shouldReturnINodesSize" classname="com.kot.inode.MyStructureTestSuite" time="0.0"/>
+  <testcase name="shouldReturnINodeByCode" classname="com.kot.inode.MyStructureTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

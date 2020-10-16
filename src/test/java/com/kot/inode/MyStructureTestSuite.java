@@ -1,9 +1,11 @@
+package com.kot.inode;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 public class MyStructureTestSuite {
 
-    private ICompositeNode iCompositeNode = new TestComposite();
+    private final ICompositeNode iCompositeNode = new TestComposite();
 
     @Test
     public void shouldReturnINodesSize() {
@@ -14,22 +16,22 @@ public class MyStructureTestSuite {
         Assert.assertEquals(4, testee.count());
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test(expected = IMException.class)
     public void shouldReturnExceptionWhenRenderIsNull() {
         //Given
         MyStructure testee = new MyStructure(iCompositeNode);
 
         //When Then
-        INode result = testee.findByRenderer(null);
+        testee.findByRenderer(null);
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test(expected = IMException.class)
     public void shouldReturnExceptionWhenCodeIsNull() {
         //Given
         MyStructure testee = new MyStructure(iCompositeNode);
 
         //When Then
-        INode result = testee.findByCode(null);
+        testee.findByCode(null);
     }
 
     @Test
@@ -40,7 +42,7 @@ public class MyStructureTestSuite {
         //When
         INode expected = new TestNode("code 2", "render 2");
 
-        //When Then
+        //Then
         Assert.assertEquals(expected, testee.findByCode("code 2"));
     }
 
@@ -52,7 +54,7 @@ public class MyStructureTestSuite {
         //When
         INode expected = new TestNode("code 3", "render 3");
 
-        //When Then
+        //Then
         Assert.assertEquals(expected, testee.findByRenderer("render 3"));
     }
 }

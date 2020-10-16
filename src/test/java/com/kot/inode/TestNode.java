@@ -1,8 +1,10 @@
+package com.kot.inode;
+
 import java.util.Objects;
 
 public class TestNode implements INode {
-    private String code;
-    private String render;
+    private final String code;
+    private final String render;
 
     public TestNode(String code, String render) {
         this.code = code;
@@ -35,7 +37,7 @@ public class TestNode implements INode {
 
     @Override
     public String toString() {
-        return "TestNode{" +
+        return "com.kot.indoe.TestNode{" +
                 "code='" + code + '\'' +
                 ", render='" + render + '\'' +
                 '}';

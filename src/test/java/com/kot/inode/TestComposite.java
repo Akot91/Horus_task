@@ -1,9 +1,11 @@
+package com.kot.inode;
+
 import java.util.Arrays;
 import java.util.List;
 
 public class TestComposite implements ICompositeNode {
 
-    private List<INode> nodes = Arrays.asList(
+    private final List<INode> nodes = Arrays.asList(
             new TestNode("test", "test2"),
             new TestNode("code 2", "render 2"),
             new TestNode("code 3", "render 3"),

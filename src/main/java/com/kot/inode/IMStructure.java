@@ -1,3 +1,5 @@
+package com.kot.inode;
+
 public interface IMStructure {
     // zwraca węzeł o podanym kodzie lub null
     INode findByCode(String code);
