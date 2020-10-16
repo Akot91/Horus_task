@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyStructureTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-16T08:23:08" hostname="DESKTOP-ML8I2ET" time="0.006">
+  <properties/>
+  <testcase name="shouldReturnINodeByRender" classname="MyStructureTestSuite" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
